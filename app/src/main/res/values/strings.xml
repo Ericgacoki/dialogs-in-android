@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Dialogs in Android</string>
+    <string name="basic_dialog">Basic dialog</string>
 </resources>
