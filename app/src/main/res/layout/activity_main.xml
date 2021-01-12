@@ -10,7 +10,7 @@
             android:id="@+id/basicDialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Basic dialog"/>
+            android:text="@string/basic_dialog"/>
 
         <androidx.constraintlayout.helper.widget.Flow
             android:layout_width="0dp"
