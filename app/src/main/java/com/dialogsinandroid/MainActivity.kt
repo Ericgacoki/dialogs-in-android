@@ -1,15 +1,42 @@
 package com.dialogsinandroid
 
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil as DB
+import androidx.databinding.DataBindingUtil
 import com.dialogsinandroid.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
-    private var mainActivityBinding: ActivityMainBinding? = null
+class MainActivity: AppCompatActivity() {
+    private var activityMainBinding: ActivityMainBinding? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        mainActivityBinding = DB.setContentView(this, R.layout.activity_main)
+        handleButtonClicks()
+    }
+
+    private fun handleButtonClicks(){
+        activityMainBinding?.basicDialog?.setOnClickListener {
+            showDialog()
+        }
+    }
+
+    private fun showDialog(){
+        val alertDialog = AlertDialog.Builder(this)
+        alertDialog.apply {
+            setTitle("Hello Dude")
+            setPositiveButton("Positive"){_,_ ->
+            }
+            setNegativeButton("Negative"){_,_ ->
+            }
+        }.create().show()
+    }
+
+    /* avoid holding references to non-existing locations*/
+
+    override fun onDestroy() {
+        super.onDestroy()
+        activityMainBinding = null
     }
 }
