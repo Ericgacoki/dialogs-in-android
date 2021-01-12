@@ -23,8 +23,9 @@ class MainActivity: AppCompatActivity() {
     }
 
     private fun showDialog(){
-        val alertDialog = AlertDialog.Builder(this)
-        alertDialog.apply {
+        val alertDialogB = AlertDialog.Builder(this)
+
+        alertDialogB.apply {
             setTitle("Hello Dude")
             setPositiveButton("Positive"){_,_ ->
             }
