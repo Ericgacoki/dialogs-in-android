@@ -6,6 +6,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <data>
+
+        </data>
         <Button
             android:id="@+id/basicDialog"
             android:layout_width="wrap_content"
