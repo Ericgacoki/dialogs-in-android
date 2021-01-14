@@ -15,6 +15,7 @@ class MainActivity: AppCompatActivity() {
 
         handleButtonClicks()
     }
+
     private fun handleButtonClicks(){
         activityMainBinding?.basicDialog?.setOnClickListener {
             showDialog()
