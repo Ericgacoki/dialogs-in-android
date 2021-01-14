@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-       // handleButtonClicks()
+        handleButtonClicks()
     }
 
     private fun handleButtonClicks() {
