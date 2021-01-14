@@ -22,6 +22,16 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun showDialog() {
+        val alertDialogB = AlertDialog.Builder(this)
+        alertDialogB.apply {
+            setTitle("Hello Dude")
+            setPositiveButton("Positive") { _, _ ->
+            }
+            setNegativeButton("Negative") { _, _ ->
+            }
+        }.create().show()
+    }
 
     /* avoid holding references to non-existing locations*/
     override fun onDestroy() {
