@@ -31,7 +31,6 @@ class MainActivity: AppCompatActivity() {
             }
         }.create().show()
     }
-
     /* avoid holding references to non-existing locations*/
     override fun onDestroy() {
         super.onDestroy()
