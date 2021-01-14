@@ -21,7 +21,6 @@ class MainActivity: AppCompatActivity() {
             showDialog()
         }
     }
-
     private fun showDialog(){
         val alertDialogB = AlertDialog.Builder(this)
 
