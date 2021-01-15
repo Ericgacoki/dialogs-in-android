@@ -37,7 +37,6 @@ class MainActivity : AppCompatActivity() {
 
     /* avoid holding references to non-existing locations*/
     override fun onDestroy() {
-
         super.onDestroy()
         activityMainBinding = null
     }
