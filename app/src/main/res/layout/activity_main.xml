@@ -20,7 +20,7 @@
             android:layout_height="200dp"
             app:constraint_referenced_ids="basicDialog"
             app:flow_verticalStyle="spread"
-            app:flow_wrapMode="chain"
+            app:flow_wrapMode="aligned"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
