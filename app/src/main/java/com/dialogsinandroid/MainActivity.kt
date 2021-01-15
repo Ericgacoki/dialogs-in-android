@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             setTitle("Hello Dude")
             setPositiveButton("Positive") { _, _ ->
             }
+
             setNegativeButton("Negative") { _, _ ->
             }
         }.create().show()
